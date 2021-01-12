@@ -42,10 +42,21 @@
                 <version>2.5.3</version>
                 <configuration>
                     <goal>install</goal>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>Majd</id>
+            <name>sfg-pet-clinic</name>
+            <url>file://C:/Users/majdm/.m2</url>
+            <layout>default</layout>
+        </repository>
+    </distributionManagement>
 
     <scm>
         <developerConnection>scm:git:git@github.com:majdmah/sfg-pet-clinic.git</developerConnection>
